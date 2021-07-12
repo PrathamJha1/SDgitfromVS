@@ -5,10 +5,6 @@ const port=8000;
 //use express router
 app.use('/',require('./routes/index'));
 
-
-app.get('/',function(req,res){
-    res.send("HELLO World");
-})
 app.listen(port,function(err){
     if(err){
         console.log("ERROR");
